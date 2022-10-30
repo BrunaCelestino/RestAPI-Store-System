@@ -1,6 +1,10 @@
 package com.example.Store.domain;
-
+import javax.persistence.*;
+@Entity
 public class Product {
+
+    @Id
+    @GeneratedValue(strategy= GenerationType.AUTO)
     private long id;
     private String code;
     private String barCode;
@@ -15,6 +19,11 @@ public class Product {
     private String color;
     private String material;
     int quantity;
+
+    public Product(){
+
+    }
+
 
     public Product(long id, String code, String barCode, String serie, String name, String description, String category, double price, double taxes, String fabrication, String expirationDate, String color, String material, int quantity) {
         this.code = code;
