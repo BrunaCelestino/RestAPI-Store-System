@@ -25,4 +25,6 @@ public class ProductDTO {
         ModelMapper modelMapper = new ModelMapper();
         return modelMapper.map(product, ProductDTO.class);
     }
+
+
 }

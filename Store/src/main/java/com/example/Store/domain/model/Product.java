@@ -26,9 +26,19 @@ public class Product {
     private String material;
     private int quantity;
 
-
-
-
-
-
+    public Product(String code, String barCode, String serie, String name, String description, String category, double price, double taxes, String fabrication, String expirationDate, String color, String material, int quantity) {
+        this.code = code;
+        this.barCode = barCode;
+        this.serie = serie;
+        this.name = name;
+        this.description = description;
+        this.category = category;
+        this.price = price;
+        this.taxes = taxes;
+        this.fabrication = fabrication;
+        this.expirationDate = expirationDate;
+        this.color = color;
+        this.material = material;
+        this.quantity = quantity;
+    }
 }
